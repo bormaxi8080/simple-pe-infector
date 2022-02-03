@@ -1,5 +1,5 @@
 # simple-pe-infector
-Simple Pe Infector
+Simple PE Infector
 
 Infecting method:
        find a free space in pe header;
@@ -11,24 +11,24 @@ Infecting method:
        may be it will be more correct to use 
        delta = PointerToRawData - (sizeof(code) + some more) 
 
-Image presentation
-       ------------------
-       |  PE HEADER     |
-       |________________|
-       |                |
-       |                |
-       |  OBJECT TABLE  |
-       |________________|                
-       |                |
-       |                |
-       | FREE SPACE     |          
-       | our code       |
-       |________________|
-       |                |
-       |.text section   |
-       | next section   |
-       | next section   |
-       | .............. |
-       |                |
-       ------------------
+Image presentation:
+>       ------------------
+>       |  PE HEADER     |
+>       |________________|
+>       |                |
+>       |                |
+>       |  OBJECT TABLE  |
+>       |________________|                
+>       |                |
+>       |                |
+>       | FREE SPACE     |          
+>       | our code       |
+>       |________________|
+>       |                |
+>       |.text section   |
+>       | next section   |
+>       | next section   |
+>       | .............. |
+>       |                |
+>       ------------------
 
